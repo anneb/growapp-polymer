@@ -5,7 +5,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
     "app-elements": "PolymerElements/app-elements#^0.10.1",
-    "OpenLayers": "3.11.2"
+    "OpenLayers": "3.11.2",
+    "proj4": "^2.3.15"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

@@ -4,6 +4,8 @@
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../../bower_components/app-layout/app-scroll-effects/effects/waterfall.html">
 
+<link rel="import" href="../ol3-map/ol3-map.html">
+
 <dom-module id="growapp-polymer-app">
   <template>
 
@@ -24,10 +26,22 @@
         background-color: white;
       }
     }
+    #map {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        border: 1px black solid;
+      }
 
     </style>
 
-    <app-drawer-layout responsive-width="1024px">
+    <app-drawer-layout responsive-width="1024px" fullbleed> 
 
       <app-drawer swipe-open>
         <app-toolbar>Menu</app-toolbar>
@@ -38,11 +52,10 @@
         <app-header reveals="" fixed condenses effects="waterfall">
           <app-toolbar>
             <paper-icon-button id="menubutton" icon="menu" drawer-toggle=""></paper-icon-button>
-            <div title="">GrowApp - Photo Locations</div>
+            <div spacer title="GrowApp" main-title>GrowApp - Photo Locations</div>
           </app-toolbar>
         </app-header>
-
-        Sample content
+        <ol3-map id="map"></ol3-map>
 
       </app-header-layout>
 
@@ -56,12 +69,8 @@
 
       is: 'growapp-polymer-app',
       ready: function () {
-        var layout = this.$.bla;
-        /* this.$.menubutton.addEventListener('tap', function() {
-          mainmenu.toggle();
-        });*/
+        ;
       }
-
     });
 
   </script>
