@@ -1,0 +1,62 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/app-elements/app-elements.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/app-layout/app-scroll-effects/effects/waterfall.html">
+
+<dom-module id="growapp-polymer-app">
+  <template>
+
+    <style>
+
+      app-header {
+        background-color: #00897B;
+        color: #fff;
+      }
+
+      app-header paper-icon-button {
+        --paper-icon-button-ink-color: white;
+      }
+      
+      app-drawer {
+      --app-drawer-scrim-background: rgba(0, 0, 0, 0.2);
+      --app-drawer-content-container: {
+        background-color: white;
+      }
+    }
+
+    </style>
+
+    <app-drawer-layout>
+
+      <app-drawer>
+        <app-toolbar>Menu</app-toolbar>
+      </app-drawer>
+
+      <app-header-layout>
+
+        <app-header reveals="" effects="waterfall">
+          <app-toolbar>
+            <paper-icon-button icon="menu" drawer-toggle=""></paper-icon-button>
+            <div title="">GrowApp - Photo Locations</div>
+          </app-toolbar>
+        </app-header>
+
+        Sample content
+
+      </app-header-layout>
+
+    </app-drawer-layout>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'growapp-polymer-app'
+
+    });
+
+  </script>
+</dom-module>

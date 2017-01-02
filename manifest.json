@@ -1,0 +1,7 @@
+{
+  "name": "growapp-polymer",
+  "short_name": "growapp-polymer",
+  "description": "Collect and animate pictures of worldwide changing vegetation",
+  "start_url": "/",
+  "display": "standalone"
+}

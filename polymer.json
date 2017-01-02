@@ -1,0 +1,12 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/growapp-polymer-app/growapp-polymer-app.html",
+  "sources": [
+    "src/**/*",
+    "images/**/*",
+    "bower.json"
+  ],
+  "includeDependencies": [
+    "bower_components/webcomponentsjs/webcomponents-lite.min.js"
+  ]
+}
