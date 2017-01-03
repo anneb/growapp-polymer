@@ -1,6 +1,14 @@
 # \<growapp-polymer\>
+Collect and animate pictures of worldwide changing vegetation, implemented with Polymer
 
-Collect and animate pictures of worldwide changing vegetation
+## Project ON HOLD
+Polymer is not compatible with older Android browsers. By default, cordova uses the built-in Android browser.
+Therefore this project is on hold, will continue with Material Design Lite.
+
+See also https://forum.ionicframework.com/t/ionic-and-polymer-work-on-browser-wont-on-android/6305 and a possible work-around: https://crosswalk-project.org/
+ 
+
+
 
 ## Prerequisites
 * git
