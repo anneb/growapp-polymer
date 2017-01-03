@@ -56,6 +56,7 @@ OpenLayers 3 map element
     Polymer({
 
       is: 'ol3-map',
+      olmap: null,
 
       properties: {
         prop1: {
@@ -65,13 +66,18 @@ OpenLayers 3 map element
       },
       ready: function() {
         this.async(function(){
-          var map = loadmap();
-          setTimeout(function() {
-            map.updateSize();
-          }, 400);
+          this.olmap = loadmap();
+        })
+      },
+      attached: function() {
+        var olmap = this.olmap;
+        setTimeout(function() {olmap.updateSize()}, 400);
+        this.async(function(){
+          /* olmap.updateSize();
+          var updateSize = this.olmap.updateSize;*/
+          
         })
       }
-
     });
   </script>
 </dom-module>

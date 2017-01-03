@@ -35,8 +35,9 @@
         top: 0;
         bottom: 0;
         height: 100%;
+        min-height: 100px;
         width: 100%;
-        border: 1px black solid;
+        border: 4px black solid;
       }
 
     </style>
@@ -49,10 +50,10 @@
 
       <app-header-layout fullbleed>
 
-        <app-header reveals="" fixed condenses effects="waterfall">
+        <app-header reveals="" fixed>
           <app-toolbar>
             <paper-icon-button id="menubutton" icon="menu" drawer-toggle=""></paper-icon-button>
-            <div spacer title="GrowApp" main-title>GrowApp - Photo Locations</div>
+            <div title="GrowApp" main-title>GrowApp - Photo Locations</div>
           </app-toolbar>
         </app-header>
         <ol3-map id="map"></ol3-map>
